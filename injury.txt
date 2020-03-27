@@ -1,0 +1,8 @@
+K_Lasagna (udi) is coming back from injury
+A_Sanabria (gen) is injured for 0 weeks after shaking off a minor injury
+V_Behrami (gen) is injured for 0 weeks after shaking off a minor injury
+M_Destro (gen) is injured for 0 weeks after shaking off a minor injury
+R_Inglese (par) is injured for 3 weeks with a twisted ankle
+M_Locatelli (sas) is injured for 1 week with a gashed leg
+M_Caceres (fio) is injured for 2 weeks with a broken finger
+F_Chiesa (fio) is injured for 2 weeks with a broken nose

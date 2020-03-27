@@ -1,0 +1,29 @@
+udi
+D
+
+GK J_Musso
+DF S_De_Maio
+DF Troost_Ekong
+DF Rodrigo_Becao
+DF J_Larsen
+DF M_Zeegelaar
+MF R_De_Paul
+MF R_Mandragora
+MF M_Jajalo
+FW S_Okaka
+FW I_Nestorovski
+
+GK Nicolas
+DF B_Nuytinck
+MF S_Fofana
+MF K_Sema
+FW L_Teodorczyk
+
+PK: S_Okaka
+TACTIC A IF MIN = 60 SCORE = -1 
+TACTIC D IF MIN = 60 SCORE = 1 
+CHANGEPOS 6 MF IF MIN = 60 
+CHANGEPOS 6 MF IF SCORE = -1 
+SUB 1 14 FW IF = 
+SUB 1 15 GK IF 
+IF 

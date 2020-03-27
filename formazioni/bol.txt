@@ -1,0 +1,28 @@
+bol
+C
+
+GK L_Skorupski
+DF Danilo
+DF S_Denswil
+DF M_Dijks
+DF T_Tomiyasu
+MF R_Soriano
+MF L_Krejci
+MF R_Orsolini
+MF A_Poli
+FW N_Sansone
+FW R_Palacio
+
+GK Da_Costa
+DF M_Bani
+MF N_Dominguez
+MF G_Medel
+FW F_Santander
+
+PK: N_Sansone
+TACTIC P IF SCORE >= 1 MIN >= 50 
+TACTIC D IF SCORE >= 2 MIN >= 45 
+TACTIC A IF SCORE <= -1 MIN >= 60 
+SUB 11 16 FW IF MIN = 65 
+SUB 9 14 MF IF MIN = 70 
+CHANGEPOS 6 FW IF SCORE <= -1 MIN >= 60 

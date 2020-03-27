@@ -1,0 +1,31 @@
+gen
+C
+
+GK M_Perin
+DF D_Criscito
+DF C_Zapata
+DF A_Masiello
+DF A_Soumaoro
+MF L_Schone
+MF I_Radovanovic
+MF S_Sturaro
+FW Iago_Falque
+FW G_Pandev
+FW A_Sanabria
+
+GK F_Marchetti
+DF D_Biraschi
+MF V_Behrami
+MF L_Lerager
+FW M_Destro
+
+PK: Iago_Falque
+SUB 7 14 MF IF MIN = 75 
+SUB 11 16 FW IF MIN = 70 
+TACTIC D IF MIN >= 65 SCORE >= 1 
+TACTIC D IF SCORE >= 2 
+TACTIC A IF MIN >= 70 SCORE <= -1 
+CHANGEPOS 5 MF IF MIN >= 75 SCORE <= -1 
+SUB 5 15 MF IF MIN >= 75 SCORE <= -1 
+CHANGEPOS 10 DF IF MIN >= 75 SCORE >= 2 
+SUB 10 13 DF IF MIN >= 75 SCORE >= 2 

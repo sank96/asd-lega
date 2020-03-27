@@ -1,0 +1,27 @@
+cag
+P
+
+GK A_Cragno
+DF R_Klavan
+DF L_Ceppitelli
+DF F_Cacciatore
+MF R_Nainggolan
+MF V_Birsa
+MF M_Rog
+MF G_Pereiro
+FW G_Simeone
+FW Joao_Pedro
+FW L_Pavoletti
+
+GK R_Olsen
+DF L_Pellegrini
+MF F_Mattiello
+MF A_Ionita
+FW A_Paloschi
+
+PK: Joao_Pedro
+TACTIC A IF MIN >= 60 SCORE <= -1 
+TACTIC N IF SCORE = 1 
+TACTIC C IF SCORE >= 2 
+TACTIC D IF SCORE >= 3 
+CHANGEPOS 5 FW IF MIN >= 60 SCORE <= -1 

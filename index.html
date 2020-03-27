@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>ASD Lega</title>
+</head>
+<body>
+<ul id="menu-bar">
+ <li  class="active"><a href="http://fantaasd.altervista.org">Formazione</a></li>
+ <li><a href="http://fantaasd.altervista.org/calendario.html">ASD CUP</a>
+  <ul>
+   <li><a href="http://fantaasd.altervista.org/calendario.html">Calendario</a></li>
+   <li><a href="http://fantaasd.altervista.org/table.txt">Classifica</a></li>
+   <li><a href="http://fantaasd.altervista.org/injury.txt">Infortunati</a></li>
+   <li><a href="http://fantaasd.altervista.org/suspend.txt">Squalificati</a></li>
+  </ul>
+ </li>
+ <li><a href="http://fantaasd.altervista.org/risultati.html">Risultati</a></li>
+ <li><a href="http://fantaasd.altervista.org/regolamento.html">Regolamento</a>
+	<ul>
+    <li><a href="http://fantaasd.altervista.org/regolamento.html">Regolamento</a></li>
+    <li><a href="http://fantaasd.altervista.org/tattiche.html">Tattiche</a></li>
+	<li><a href="http://fantaasd.altervista.org/esempioform.html">Esempio Formazione</a></li>
+    </ul>
+ </li>
+  <li><a href="http://fantaasd.altervista.org/teams/ata.txt">Rose</a>
+	<ul>
+    <li><a href="http://fantaasd.altervista.org/teams/ata.txt">Atalanta</a></li>
+    <li><a href="http://fantaasd.altervista.org/teams/bol.txt">Bologna</a></li>
+	<li><a href="http://fantaasd.altervista.org/teams/bre.txt">Brescia</a></li>
+    <li><a href="http://fantaasd.altervista.org/teams/cag.txt">Cagliari</a></li>
+    <li><a href="http://fantaasd.altervista.org/teams/fio.txt">Fiorentina</a></li>
+	<li><a href="http://fantaasd.altervista.org/teams/gen.txt">Genoa</a></li>
+    <li><a href="http://fantaasd.altervista.org/teams/par.txt">Parma</a></li>
+    <li><a href="http://fantaasd.altervista.org/teams/sam.txt">Sampdoria</a></li>
+	<li><a href="http://fantaasd.altervista.org/teams/sas.txt">Sassuolo</a></li>
+    <li><a href="http://fantaasd.altervista.org/teams/spa.txt">Spal</a></li>
+    <li><a href="http://fantaasd.altervista.org/teams/tor.txt">Torino</a></li>
+	<li><a href="http://fantaasd.altervista.org/teams/udi.txt">Udinese</a></li>
+    </ul>
+ </li>
+ <br>
+ <br>
+ <br>
+    <form action="save.php" method="POST">
+    <div style="padding: 10px 100px;">
+        <h1>ASD Lega</h1>
+        <div class="block">
+            <h3>Squadra</h3>
+            <select id="squadra" name="team">
+                <option value="">---</option>
+                <option value="ata">Atalanta</option>
+                <option value="bol">Bologna</option>
+                <option value="bre">Brescia</option>
+                <option value="cag">Cagliari</option>
+                <option value="fio">Fiorentina</option>
+                <option value="gen">Genoa</option>
+                <option value="par">Parma</option>
+                <option value="sam">Sampdoria</option>
+                <option value="sas">Sassuolo</option>
+                <option value="spa">Spal</option>
+                <option value="tor">Torino</option>
+                <option value="udi">Udinese</option>
+            </select>
+            <input type="file" id="fileInput" hidden>
+            <table id="teamtable"></table>
+        </div>
+        <div class="block">
+            <h3>Modulo</h3>
+            <select id="modulo" disabled>
+                <option value="">---</option>
+                <option value="343">3-4-3</option>
+                <option value="352">3-5-2</option>
+                <option value="424">4-2-4</option>
+                <option value="433">4-3-3</option>
+                <option value="442">4-4-2</option>
+                <option value="451">4-5-1</option>
+                <option value="523">5-2-3</option>
+                <option value="532">5-3-2</option>
+                <option value="541">5-4-1</option>
+            </select>
+        </div>
+        
+        <div id="formazione" class="block">
+            <h3>Formazione</h3>
+            
+        </div>
+        
+        <div id="tattica">
+            <h3 id="">Tattica</h3>
+            <table id="tabletactic">
+            </table>
+            <button id="newtactic" type="button">new</button>
+            
+        </div>
+        <div>
+            <input type="number" name="n_tat" id="n_tat" value="0" hidden>
+            <h3>Salva formazione</h3>
+            
+            <input type="submit">
+        </div>
+        
+    </div>
+    </form>
+</body>
+<script src="functions.js"></script>
+</html>

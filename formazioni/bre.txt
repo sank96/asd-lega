@@ -1,0 +1,27 @@
+bre
+A
+
+GK J_Joronen
+DF A_Cistana
+DF S_Sabelli
+DF B_Martella
+DF A_Mateju
+MF Romulo
+MF S_Tonali
+MF D_Bisoli
+FW F_Aye
+FW M_Balotelli
+FW E_Torregrossa
+
+GK E_Alfonso
+DF J_Chancellor
+MF J_Zmrhal
+MF N_Spalek
+FW A_Donnarumma
+
+PK: M_Balotelli
+TACTIC P IF SCORE = -1 
+TACTIC D IF SCORE = 1 
+CHANGEPOS 4 MF IF MIN = 65 SCORE = 0 
+SUB 11 16 GK IF MIN = 70 
+SUB 8 14 GK IF MIN = 60 

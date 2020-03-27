@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <title>Esempio Formazione</title>
+</head>
+<body>
+<ul id="menu-bar">
+ <li><a href="http://fantaasd.altervista.org">Formazione</a></li>
+ <li><a href="http://fantaasd.altervista.org/calendario.html">ASD CUP</a>
+  <ul>
+   <li><a href="http://fantaasd.altervista.org/calendario.html">Calendario</a></li>
+   <li><a href="http://fantaasd.altervista.org/table.txt">Classifica</a></li>
+   <li><a href="http://fantaasd.altervista.org/injury.txt">Infortunati</a></li>
+   <li><a href="http://fantaasd.altervista.org/suspend.txt">Squalificati</a></li>
+  </ul>
+ </li>
+ <li><a href="http://fantaasd.altervista.org/risultati.html">Risultati</a></li>
+ <li class="active"><a href="http://fantaasd.altervista.org/regolamento.html">Regolamento</a>
+	<ul>
+	<li><a href="http://fantaasd.altervista.org/regolamento.html">Regolamento</a></li>
+    <li><a href="http://fantaasd.altervista.org/tattiche.html">Tattiche</a></li>
+	<li><a href="http://fantaasd.altervista.org/esempioform.html">Esempio Formazione</a></li>
+    </ul>
+ </li>
+  <li><a href="http://fantaasd.altervista.org/teams/ata.txt">Rose</a>
+	<ul>
+    <li><a href="http://fantaasd.altervista.org/teams/ata.txt">Atalanta</a></li>
+    <li><a href="http://fantaasd.altervista.org/teams/bol.txt">Bologna</a></li>
+	<li><a href="http://fantaasd.altervista.org/teams/bre.txt">Brescia</a></li>
+    <li><a href="http://fantaasd.altervista.org/teams/cag.txt">Cagliari</a></li>
+    <li><a href="http://fantaasd.altervista.org/teams/fio.txt">Fiorentina</a></li>
+	<li><a href="http://fantaasd.altervista.org/teams/gen.txt">Genoa</a></li>
+    <li><a href="http://fantaasd.altervista.org/teams/par.txt">Parma</a></li>
+    <li><a href="http://fantaasd.altervista.org/teams/sam.txt">Sampdoria</a></li>
+	<li><a href="http://fantaasd.altervista.org/teams/sas.txt">Sassuolo</a></li>
+    <li><a href="http://fantaasd.altervista.org/teams/spa.txt">Spal</a></li>
+    <li><a href="http://fantaasd.altervista.org/teams/tor.txt">Torino</a></li>
+	<li><a href="http://fantaasd.altervista.org/teams/udi.txt">Udinese</a></li>
+    </ul>
+ </li>
+ <br>
+ <br>
+ <br>
+<table class="color" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><strong>TEAM SHEET TEMPLATE</strong><br />-------------------------<br /><br />[Team name] "Il nome della squadra abbreviato (prime tre lettere)"<br />[Tactic] "La lettera che indica il tipo di strategia"<br /><br />GK [Player name] "Il primo giocatore della squadra deve essere un portiere"<br />[Pos] [Name] "Da qui partono gli altri 10 giocatori iniziali"<br />[Pos] [Name] "Invece di Pos inserire il ruolo (DF, MF, FW)"<br />[Pos] [Name]<br />[Pos] [Name]<br />[Pos] [Name]<br />[Pos] [Name]<br />[Pos] [Name]<br />[Pos] [Name]<br />[Pos] [Name]<br />[Pos] [Name]<br /><br />[Pos] [Name] "Queste sono le 5 sostituzioni che vengono indicate allo stesso modo"<br />[Pos] [Name]<br />[Pos] [Name]<br />[Pos] [Name]<br />[Pos] [Name]<br /><br />PK: [Player name] "Rigorista"<br /><br />[Order] [Arguments...] [Condition] "[Order] e [Arguments] sono dei cambiamenti alla tattica"<br />[Order] [Arguments...] [Condition]<br />[Order] [Arguments...] [Condition] "[Condition] &egrave; la condizione per l'esecuzione dell'ordine"<br />[Order] [Arguments...] [Condition]<br />...<br />...<br />...<br /><br /><strong>ORDERS AND CONDITIONS</strong><br />-------------------------<br /><br />Nota: negli ordini, i giocatori non vengono chiamati con il loro nome, ma dai loro numeri.<br />Il numero del giocatore &egrave; semplicemente la sua posizione se conti i giocatori dall'alto verso il basso.<br />Quindi, il GK &egrave; il numero 1, l'ultimo giocatore nella squadra iniziale &egrave; l'11, la prima sostituzione &egrave; il 12 e l'ultima sostituzione il 16.<br /><br /><br />Orders e Arguments.<br />Sono disponibili 3 ordini diversi:<br /><br /><strong>TACTIC</strong>: Arguments - [NewTactic] (La singola lettera),<br />E' un ordine per cambiare tattica dalla iniziale.<br />Ad esempio:<br />TACTIC L<br />Passa alla tattica L quando la condizione si avvera.<br /><br /><strong>CHANGEPOS</strong>: Arguments - [PlayerNumber] [NewPosition].<br />Indica al programma di cambiare la posizione di alcuni giocatore in una nuova posizione.<br />Inserisci il numero del giocatore e la nuova posizione dopo l' [Order].<br />Ad esempio:<br />CHANGEPOS 11 DF<br />Dice al programma di cambiare il ruolo del giocatore numero 11 in difensore quando la condizione si avvera.<br /><br /><strong>SUB</strong>: Arguments - [Pl.OutNumber] [Pl.InNumber] [Position]<br />Indica al programma di sostituire un giocatore con un altro, e gioca il sostituto con la posizione indicata.<br />Ad esempio:<br />SUB 10 14 FW<br />Sostituir&agrave; il giocatore numero 10 con il giocatore numero 14<br />e il sub (n. 14) giocher&agrave; come attaccante, quando la condizione si avvera.<br />Solo 3 sostituzioni sono permesse a partita.<br />E' obbligatorio specificare la posizione per il giocatore entrante.<br /><br />Conditions<br /><br /><strong>IF MIN = [Minute]</strong><br />Se la partita ha raggiunto il minuto indicato, l'ordine verr&agrave; eseguito.<br />Ad esempio:<br />CHANGEPOS 2 MF IF MIN = 56<br />Cambier&agrave; la posizione del giocatore numero 2 in centrocampista al minuto 56.<br /><br /><strong>IF SCORE = [Score]</strong><br />Lo [Score] argument &egrave; un singolo numero che rappresenta la differenza nel punteggio tra la tua squadra e l'avversario.<br />2 sei in vantaggio di 2 goal, -6 sei sotto di 5 goal, ecc.<br />Ad esempio:<br />TACTIC A IF SCORE = -1<br />Significa che la squadra passer&agrave; alla tattica A se viene subito un gol.<br /><br /><strong>IF BOTH MIN [Sign] [Minute] SCORE [Sign] [Score]</strong><br />L'esecuzione dell'ordine pu&ograve; dipendere sia dal punteggio che dal minuto di gioco.<br />Il [Sign] argument pu&ograve; essere = , &gt;= or =&lt;<br />Un po' di esempi:<br /><br />TACTIC A IF BOTH MIN &gt;= 45 SCORE =&lt; -1<br />Dice al programma di cambiare la tattica in A se la partita &egrave; al minuto 45 o superiore e la tua squadra sta perdendo di 1 o pi&ugrave; goal.<br /><br />CHANGEPOS 2 MF IF BOTH MIN =&lt; 20 SCORE &gt;= 1<br />Dice al programma di cambiare la posizione del giocatore 2 in MF (Centrocampista) se la partita &egrave; prima del minuto 20 e la tua squadra sta vincendo di almeno 1 goal.<br /><br /><br /><strong>EXAMPLES OF TEAM SHEETS</strong><br />---------------------------<br /><br />Example 1<br />```````````````````````````````````````<br />bar "Nome del Team."<br />N "Inizia la partita con una tattica N (Normal)"<br />GK R_Hesp "Il primo giocatore &egrave; sempre il GK"<br />DF J_Guardiola<br />DF F_De_Boer<br />DF M_Nadal<br />DF B_Sergi<br />MF L_Figo<br />MF Rivaldo<br />MF L_Enrique<br />MF R_De_Boer<br />FW S_Anderson<br />FW P_Kluivert "Questi sono gli 11 giocatori in campo (formazione: 4-4-2)"<br /><br />GK Vitor_Baia "Questi sono i 5 sostituti"<br />MF F_Abelardo<br />DF A_Celades<br />DF W_Bogarde<br />FW Giovanni<br /><br />PK: S_Anderson "S_Anderson &egrave; il primo rigorista"<br /><br />TACTIC A IF BOTH MIN = 55 SCORE =&lt; -1 "Se stiao perdendo al minuto 55 usiamo la tattica A"<br />SUB 11 16 FW IF MIN = 60 "Sostituisci P_Kluivert con Giovanni al minuto 60"<br />CHANGEPOS 8 DF IF SCORE = 1 "Se stiamo vincendo di 1 goal, cambia la posizione di L_Enrique in DF"<br />TACTIC D IF SCORE = 2 "Se stiamo vincendo di 2 goal usiamo la tattica D"<br /><br />```````````````````````````````````````<br />Example 2<br /><br />```````````````````````````````````````<br /><br />juv "Il nome della squadra."<br />L "Gioca con la tattica L"<br />GK A_Peruzzi<br />DF M_Iuliano<br />DF I_Tudor<br />DF Z_Mirkovic<br />DF G_Pessotto<br />MF D_Dechamps<br />MF A_Conte<br />FW Z_Zidane<br />FW T_Henry<br />FW N_Amoruso<br />FW A_Del_Piero "(formazione: 4-2-4)"<br /><br />GK M_Rampulla<br />MF P_Montero<br />DF C_Ferrara<br />DF A_Tachinardi<br />FW J_Esnaider<br /><br />PK: A_Del_Piero "A_Del_Piero sar&agrave; il rigorista"<br /><br />SUB 6 13 MF IF MIN = 75 "Sostituisci il 6 con il 13 al minuto 75"<br /><br />TACTIC C IF SCORE = 1 "Come puoi vedere questi 3 ordini si riferiscono alla stesso condizione"<br />CHANGEPOS 8 DF IF SCORE = 1 "e dice al programma di cambiare in 5-3-2 se stai vincendo di 1 goal"<br />CHANGEPOS 9 MF IF SCORE = 1</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
